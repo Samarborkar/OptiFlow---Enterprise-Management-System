@@ -1,0 +1,21 @@
+{
+  "name": "opti_flow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0",
+    "npx": "^10.2.2",
+    "otp-generator": "^4.0.1",
+    "react-router-dom": "^6.26.2",
+    "typewriter-effect": "^2.21.0"
+  }
+}

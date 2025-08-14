@@ -1,0 +1,928 @@
+/* General Body Styling */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #121212; /* Dark background */
+  color: white;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* Form Container (Signup) */
+.create {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #1e1e1e; /* Darker gray for the form background */
+  border-radius: 15px; /* Rounded corners */
+  border: 2px solid  #00ccff; /* Blue border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add subtle shadow for depth */
+  color: #ffffff; /* White text */
+}
+
+.create h3 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color:  #00ccff; /* Bright Blue heading */
+  font-weight: 600;
+}
+
+/* Input Fields */
+.create label {
+  margin: 10px 0 5px;
+  font-size: 14px;
+  color: #b0b0b0; /* Light gray for labels */
+}
+
+.create input {
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 10px; /* Rounded input fields */
+  border: 1px solid  #00ccff; /* Blue border for inputs */
+  background-color: #2c2c2c; /* Darker input background */
+  color: #ffffff; /* White text */
+  font-size: 16px;
+}
+
+.create input::placeholder {
+  color: #999999; /* Light gray for placeholders */
+}
+
+/* Signup Button */
+.create button {
+  padding: 12px;
+  background-color:  #00ccff; /* Blue button */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 10px; /* Rounded button */
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.create button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Login and Forgot Password Links */
+.extra-options {
+  display: flex;
+  justify-content: center; /* Center the items */
+  align-items: center; /* Align items vertically in the center */
+  margin-top: 20px;
+  gap: 15px; /* Add space between links */
+}
+
+.create a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 12px; /* Add padding for clickable area */
+  border-radius: 5px; /* Rounded corners */
+  background-color: transparent; /* Transparent background */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.create a:hover {
+  color: #ffffff; /* Keep text color on hover */
+}
+
+/* OTP Verification Section */
+.otp-verification {
+  margin: 15px 0;
+  padding: 15px;
+  background-color: #2c2c2c; /* Darker Gray background */
+  border-radius: 10px;
+}
+
+.otp-verification input {
+  width: 80%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid  #00ccff; /* Blue border */
+  background-color: #1e1e1e; /* Dark input */
+  color: #ffffff; /* White text */
+}
+
+.otp-verification button {
+  background-color:  #00ccff; /* Blue button */
+  padding: 8px 12px;
+  border-radius: 5px;
+  color: #ffffff; /* White text */
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.otp-verification button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.success {
+  color:  #00ccff; /* Blue success message */
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.error {
+  color: #ff0000; /* Red error messages */
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.space {
+  margin-top: 25px;
+}
+/* Navbar Styling */
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #64a3e6, #000000); /* Gradient background */
+  padding: 10px 20px; /* Adjusted padding for responsiveness */
+  position: fixed; /* Fixed positioning */
+  top: 0; /* Stick to the top */
+  left: 0; /* Stretch to the left */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Above other elements */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+  flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.Nav a {
+  text-decoration: none; /* No underline */
+  color: #ffffff; /* White links */
+  margin-left: 10px; /* Space between links */
+  font-size: 16px; /* Adjusted font size */
+  font-weight: 1000;
+  transition: color 0.3s ease;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+.Nav a:hover {
+  color:  #00ccff; /* Blue hover color */
+}
+
+/* Container for the navbar links and profile dropdown */
+.container2 {
+  display: flex;
+  align-items: center; /* Align items in the center */
+  gap: 25px; /* Space between items */
+  margin-right: 50px;
+}
+.container2 a {
+  font-size: 16px; /* Consistent font size */
+  color: #ffffff; /* White text */
+  font-weight: 500;
+  cursor: pointer;
+  padding: 20px 12px; /* Add padding for better clickable area */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+/* Profile dropdown container */
+.profile-dropdown {
+  position: relative; /* Relative positioning to manage the dropdown */
+}
+
+/* Styling for the profile dropdown button */
+.profile-dropdown button {
+  font-size: 16px; /* Consistent font size */
+  color: #ffffff; /* White text */
+  font-weight: 500;
+  background-color: transparent; /* Transparent background */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
+  padding: 12px 18px; /* Padding for button */
+  border-radius: 30px; /* Smooth rounded corners */
+  text-transform: uppercase; /* Uppercase for stylish look */
+  letter-spacing: 1px; /* Slight letter spacing */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.profile-dropdown button:hover {
+  background-color:  #00ccff; /* Blue background on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Dropdown content (hidden by default) */
+.profile-dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute; /* Positioned below the profile button */
+  background-color: #000000; /* Dark background */
+  min-width: 200px; /* Width of dropdown */
+  border-radius: 10px; /* Rounded corners */
+  /* box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15); Soft shadow */
+  z-index: 1; /* Keep dropdown above other elements */
+  opacity: 0;
+  visibility: hidden; /* Initially invisible */
+  transform: translateY(-10px); /* Drop from above */
+  transition: all 0.3s ease-in-out; /* Smooth entrance animation */
+}
+
+/* Show the dropdown when hovering or clicking on the profile button */
+.profile-dropdown:hover .profile-dropdown-content,
+.profile-dropdown.open .profile-dropdown-content {
+  display: block; /* Show the dropdown */
+  opacity: 1; /* Make it fully visible */
+  visibility: visible; /* Set visibility to visible */
+  transform: translateY(0); /* Drop into place */
+}
+
+/* Dropdown item styling */
+.profile-dropdown-content a {
+  color: #ffffff; /* White text */
+  padding: 12px 18px; /* Padding for dropdown items */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Block-level display for each item */
+  font-weight: 400; /* Slightly lighter font weight */
+  border-radius: 10px; /* Rounded corners for items */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth background change */
+  padding-top: 20px;
+}
+
+.profile-dropdown-content a:hover {
+  background-color:  #00ccff; /* Blue background on hover */
+  color: black;
+  transform: translateX(10px); /* Slide effect */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 700px) {
+  .Nav {
+    flex-direction: column; /* Stack items on smaller screens */
+    align-items: flex-start; /* Align items to the left */
+    padding: 10px; /* Reduced padding */
+  }
+
+  .container2 {
+    flex-direction: column; /* Stack buttons on small screens */
+    width: 100%; /* Full width */
+    justify-content: flex-start; /* Align items at the start */
+  }
+
+  .Nav a {
+    margin-left: 0; /* Remove left margin on smaller screens */
+    margin-bottom: 10px; /* Space between links */
+    padding: 15px 20px;
+  }
+
+  .profile-dropdown button {
+    margin-bottom: 10px; /* Add space below the button on smaller screens */
+  }
+
+  .profile-dropdown-content a {
+    padding: 10px 15px; /* Padding for dropdown items */
+  }
+}
+
+
+/* Profile Container */
+.profile {
+  width: 100%;
+  max-width: 700px; /* Maximum width of the profile container */
+  margin: 0 auto; /* Center the profile container */
+  padding: 40px; /* Spacious padding */
+  color: #444; /* Text color */
+  background: linear-gradient(135deg, #f3f4f8, #e4e8eb); /* Elegant gradient */
+  border-radius: 20px; /* Rounded corners for a soft appearance */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* Deep shadow for depth */
+  text-align: center; /* Centered text */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.profile:hover {
+  transform: translateY(-8px); /* Lift effect on hover */
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Heading Style */
+.profile h2 {
+  font-size: 2.5rem; /* Larger heading for impact */
+  margin-bottom: 20px; /* Increased margin for spacing */
+  color: #2d3436; /* Darker text for readability */
+  font-family: 'Helvetica Neue', sans-serif; /* Smooth and modern font */
+  font-weight: 600; /* Medium weight for subtle emphasis */
+  letter-spacing: 1.2px; /* Slight letter spacing */
+  text-transform: uppercase; /* Capitalized heading */
+  border-bottom: 3px solid #ff7f50; /* Stylish underline */
+  padding-bottom: 10px; /* Padding below the heading */
+}
+
+/* Paragraph Styles for User Info */
+.profile p {
+  font-size: 1.5rem; /* Increased font size for readability */
+  margin-bottom: 20px; /* Extra margin between paragraphs */
+  color: #555; /* Slightly lighter text color */
+  font-family: 'Arial', sans-serif; /* Clean, sans-serif font */
+  line-height: 1.8; /* Increased line-height for better readability */
+}
+
+/* Bold styling for labels like Username and Designation */
+.profile p strong {
+  color: #333; /* Darker color for strong text */
+  font-weight: 700; /* Bold text for emphasis */
+}
+
+/* Error message styling */
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Loading text style */
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #3498db; /* Blue color to indicate loading */
+  margin-top: 50px;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Spacer */
+.spacer2 {
+  height: 50px; /* Vertical spacing above the profile */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile {
+    padding: 20px; /* Reduced padding for smaller screens */
+  }
+
+  .profile h2 {
+    font-size: 2rem; /* Adjust heading size for smaller screens */
+  }
+
+  .profile p {
+    font-size: 1.2rem; /* Slightly smaller text for mobile */
+  }
+
+  .profile {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Lighter shadow for mobile */
+  }
+}
+
+
+/* General styling */
+body {
+  /* background-color: grey; Light gray background for contrast */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task-form-container {
+  background: linear-gradient(135deg, #3b3b3b, #2a2a2a); /* Subtle gradient for a modern look */
+  position: relative; /* Changed from absolute for better responsiveness */
+  top: 75px; /* Adjusted position */
+  color: #ffffff;
+  padding: 30px; /* Adequate padding for a neat layout */
+  padding-right: 60px;
+  border-radius: 20px; /* Softer corners */
+  max-width: 600px; /* Balanced container width */
+  margin: 50px auto; /* Center alignment */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Softer shadow for a clean look */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 400px;
+}
+.task-list-container {
+  background: linear-gradient(135deg, #3b3b3b, #2a2a2a); /* Subtle gradient for a modern look */
+  position: relative; /* Changed from absolute for better responsiveness */
+  top: 600px; /* Adjusted position */
+  color: #ffffff;
+  padding: 30px; /* Adequate padding for a neat layout */
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 20px; /* Softer corners */ 
+  width: 400px;
+  margin: 100px auto; /* Center alignment */
+  margin-top: 300px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Softer shadow for a clean look */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-form-container:hover,
+.task-list-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Task form specific styling */
+.task-form-container h2 {
+  color: #00ccff; /* Vibrant blue for headings */
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 1.8rem; /* Slightly larger heading font */
+}
+
+.task-form-container form div {
+  margin-bottom: 20px;
+}
+
+.task-form-container label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #cccccc; /* Lighter text for labels */
+}
+
+.task-form-container input[type="text"],
+.task-form-container input[type="date"],
+.task-form-container textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #444444;
+  background-color: #2b2b2b;
+  color: #ffffff;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.task-form-container input[type="text"]:focus,
+.task-form-container input[type="date"]:focus,
+.task-form-container textarea:focus {
+  border-color: #00ccff; /* Bright blue focus border */
+  background-color: #333333; /* Slightly lighter background */
+}
+
+.task-form-container button {
+  width: 100%;
+  padding: 15px;
+  background-color: #00ccff; /* Vibrant blue button */
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.task-form-container button:hover {
+  background-color: #0099cc; /* Darker blue on hover */
+  transform: scale(1.02); /* Slight zoom effect */
+}
+
+/* Task list specific styling */
+.task-list-container h2 {
+  color: #00ccff; /* Blue heading */
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 1.8rem; /* Slightly larger heading font */
+  width: auto;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.task-item {
+  background-color: #2b2b2b; /* Dark but contrasting background */
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.task-item:hover {
+  background-color: #3b3b3b; /* Slightly lighter hover background */
+  transform: translateY(-2px);
+}
+
+.task-item h3 {
+  color: #00ccff; /* Blue for task title */
+  margin: 0 0 10px;
+  font-size: 1.2rem; /* Slightly larger font */
+}
+
+.task-item p {
+  margin: 5px 0;
+  font-size: 0.9rem; /* Slightly smaller for description */
+  color: #cccccc; /* Lighter text for task details */
+}
+.task-item button {
+  background-color: #ff4c4c; /* Red color for danger */
+  color: #ffffff; /* White text */
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Error and success messages */
+.error-message {
+  color: #ff4c4c; /* Red for error messages */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.success-message {
+  color: #4caf50; /* Green for success messages */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.spacer {
+  height: 70px; /* Adjust this value to control the space */
+}
+.spacer2 {
+  height: 10px;
+}
+/* General content container styling */
+.content {
+  display: flex;
+  position: absolute;
+  top: 150px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  align-items: center;
+  gap: 220px; /* Space between text and image */
+  padding: 20px; /* Padding on both sides */
+}
+
+
+/* Text content styling */
+.text h1 {
+  font-size: 2.5rem; /* Large font for prominent display */
+  font-weight: bolder;
+  color: wheat;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* Highlight styling for 'OptiFlow' */
+.text h1 strong {
+  color:  #00ccff; /* Blue color to highlight 'OptiFlow' */
+  font-weight: bolder;
+}
+
+/* Typewriter effect styling */
+.typewriter-wrapper {
+  margin-top: 100px;
+  font-size: 2.5rem;
+  color: var(--imp-text-color, rgb(0, 229, 255));
+  font-weight: bold;
+}
+
+/* Image styling */
+.image {
+  flex-shrink: 0; /* Prevents image from shrinking */
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px; /* Optional: add rounded corners */
+}
+
+/* Spacer styling for padding */
+.spacer3 {
+  height: 300px;
+}
+
+/* Keyframe for letter fade-in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.home {
+  display: flex;
+  flex-direction: column; /* Stacks child elements vertically */
+  align-items: center; /* Centers content horizontally */
+  gap: 50px; /* Space between stacked elements */
+  margin: 0 auto;
+  width: 100%; /* Full-width responsive layout */
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around; /* Distribute space between text and image */
+  align-items: center; /* Vertically align the content */
+  gap: 120px; /* Reduced space between text and image for better balance */
+  padding: 20px; /* Padding around the content */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  width: 100%;
+  max-width: 100%; /* Limit the maximum width for larger screens */
+  margin: 0 auto; /* Centers the content horizontally */
+  margin-top: 50px; /* Adjusted margin-top for spacing from the top */
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+  flex-grow: 1; /* Makes sure the content area grows to fill available space */
+}
+
+.content .text h1 {
+  font-size: 2.5rem;
+  color: wheat;
+  text-align: left;
+  max-width: 600px; /* Limit text width to prevent compression */
+  line-height: 1.3; /* Increase line height for better readability */
+}
+
+.content .typewriter-wrapper {
+  margin-top: 50px;
+}
+
+.content .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  max-width: 500px; /* Limit image width to prevent stretching */
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column; /* Stack the text and image on top of each other */
+    gap: 20px; /* Reduced gap between elements on smaller screens */
+    padding: 10px; /* Reduced padding on smaller screens */
+  }
+
+  .content .text h1 {
+    font-size: 2rem; /* Adjust font size on smaller screens */
+  }
+
+  .content .image img {
+    max-width: 80%; /* Image will take more width on smaller screens */
+  }
+}
+
+.Task {
+  width: 100%; /* Match width with content for alignment */
+  max-width: 800px;
+  margin: 0 auto; /* Center align */
+  padding: 20px;
+  margin-top: 200px;
+}
+
+.spacer3 {
+  height: 20px; /* Space between navbar and content */
+}
+/* Button Styles for Login and Sign Up */
+/* Button container for centering - now aligned left */
+.cta {
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the left */
+  gap: 100px;
+  margin-top: 60px;
+}
+
+/* Common Button Styles */
+.cta-button {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90deg, #00bfff,  #00ccff);
+  border: none;
+  border-radius: 50px;
+  padding: 15px 50px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 191, 255, 0.4);
+  letter-spacing: 1.2px;
+  font-family: 'Arial', sans-serif;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background: linear-gradient(90deg,  #00ccff, #00bfff);
+  box-shadow: 0 6px 18px rgba(0, 191, 255, 0.5);
+  transform: translateY(-4px);
+}
+
+.cta-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 4px 12px rgba(0, 191, 255, 0.3);
+}
+
+.cta-button:focus {
+  outline: none;
+}
+
+/* Specific Button Styles for Login and Sign Up */
+.cta-button.login {
+  background: linear-gradient(90deg, #4CAF50, #45a049);
+}
+
+.cta-button.login:hover {
+  background: linear-gradient(90deg, #45a049, #4CAF50);
+}
+
+.cta-button.signup {
+  background: linear-gradient(90deg, #FF4081, #D81B60);
+}
+
+.cta-button.signup:hover {
+  background: linear-gradient(90deg, #D81B60, #FF4081);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .cta-button {
+    font-size: 16px;
+    padding: 12px 30px;
+  }
+  .cta {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #64a3e6, #000000); /* Gradient background */
+  padding: 20px 20px; /* Adjusted padding for responsiveness */
+  position: fixed; /* Fixed positioning */
+  top: 0; /* Stick to the top */
+  left: 0; /* Stretch to the left */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Above other elements */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+  flex-wrap: wrap; /* Allow items to wrap */
+
+}
+
+.navbar-left h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 100px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+}
+
+.navbar-link:hover {
+  background:  #00ccff;
+  cursor: pointer;
+}
+
+body {
+  padding-top: 60px; /* Space for sticky navbar */
+}
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out; /* Fade-in effect for the overlay */
+}
+
+/* Popup Content */
+.popup-content {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* Set max-width for better responsiveness */
+  animation: slideUp 0.3s ease-out; /* Slide-up animation */
+  background-color: transparent;
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 100px;
+  right: 80px;
+  background-color: red;
+  border-radius: 50%;
+  border: none;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-button:hover {
+  color: #e74c3c; /* Change color on hover for better interaction */
+}
+
+/* Form Input Fields */
+.popup-content input[type="text"],
+.popup-content input[type="email"],
+.popup-content input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.popup-content input[type="text"]:focus,
+.popup-content input[type="email"]:focus,
+.popup-content input[type="password"]:focus {
+  border-color: #3498db; /* Blue border on focus */
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3); /* Focused shadow effect */
+  outline: none;
+}
+
+/* Submit Button */
+.popup-content button[type="button"] {
+  width: 100%;
+  padding: 14px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-content button[type="button"]:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .popup-content {
+    padding: 20px 30px;
+    width: 90%;
+    max-width: 100%;
+  }
+}
+
+/* Fade-in and Slide-up Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

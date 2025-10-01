@@ -49,7 +49,7 @@ Ensure you have the following installed on your system before proceeding:
    Open your terminal and run the following command:
    In bash-
    
-   git clone https://github.com/Buddha-11/Opti_flow
+   git clone https://github.com/Samarborkar/OptiFlow---Enterprise-Management-System
 
    Install Dependencies in IDE: Navigate to the cloned repository and install required dependencies for both frontend and backend:
    
